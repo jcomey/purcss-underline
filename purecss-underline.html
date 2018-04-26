@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>pur css underline animation</title>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <style type="text/css">
+         
+        body{position: relative;height: 100%;margin: 0 auto;  }
+.nav-bar { display: flex; justify-content: space-between; padding: 0;  margin:50% auto;text-align: center; height: 0; }
+.nav-bar a { position: relative; font-size: 16px;cursor:pointer; }
+.nav-bar a::after { content: ""; display: block; position: absolute; bottom: -10px; left: 0; border-bottom: 2px solid #222; width: 100%; transition: all 0.2s ease-in-out; transform: scale3d(0, 1, 1); height: 1px; background: #000; transform-origin: 50% 0; }
+.nav-bar a:hover::after { transition: all 0.2s ease-in-out; transform: scale3d(1, 1, 1); }
+
+        
+        </style>
+    </head>
+    <body>
+    
+        <div class="nav-bar">
+            <a class="nav-a">首页</a>
+            <a class="nav-a">联系我们</a>
+            <a class="nav-a">关于我们</a>
+            <a class="nav-a">网上店铺</a>
+        </div>
+
+   
+        <script type="text/javascript">
+            
+$(function(){
+var h=$('body').height();
+w=h;
+$('body').width(w);
+ 
+
+ 
+
+
+})
+
+
+
+        </script>
+    </body>
+</html>
